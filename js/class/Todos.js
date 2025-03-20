@@ -55,6 +55,7 @@ class Todos{
     }
 
     #readJson= (tasksAsJson) =>{
+        console.log(tasksAsJson)
         tasksAsJson.forEach(node =>{
             const task = new Task(node.id, node.description)
             this.#tasks.push(task)
